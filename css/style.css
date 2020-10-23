@@ -908,6 +908,7 @@ button.catalog__filter-btnline{
 .filter__item-drop{
   margin-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .filter__item-drop::before{
@@ -915,12 +916,53 @@ button.catalog__filter-btnline{
   background-image: url('../images/arrow-down.svg');
   position: absolute;
   left: 0;
-  bottom: 4px;
+  bottom: 5px;
   width: 12px;
   height: 8px;
+  transform: rotate(0deg);
 }
 
 
-.filter__item-drop--active{
+.filter__item-drop--active::before{
+  transform: rotate(180deg);
+}
 
+.aside-filter__content{
+  display: flex;
+}
+
+.aside-filter__content-box{
+  width: 50%;  
+}
+
+.aside-filter__content-label {
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 17px;
+}
+
+.jq-checkbox, .jq-radio{
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c4c4c4;
+  border-radius: 1px;
+  box-shadow: none;
+  vertical-align: -1px;
+  margin: 0 8px 0 0;
+}
+
+.jq-checkbox.checked, .jq-radio.checked{
+  background: #1C62CD;
+  border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div{
+  width: 8px;
+  height: 6px;
+  margin: 4px 0 0 3px;
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(0);
+  background-image: url('../images/checked-icon.svg')
 }
