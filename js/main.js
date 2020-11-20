@@ -61,6 +61,10 @@ $(function(){
       normalFill: "#C4C4C4"
   });
 
+  $('.menu__btn').on('click', function() {
+    $('.menu-mobile__list').toggleClass('menu-mobile__list--active')
+  })
+
 
 });
 

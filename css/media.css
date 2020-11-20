@@ -20,6 +20,7 @@
     background-color: transparent;
     cursor: pointer;
     border: none;
+    padding: 0;
   }
 
   .menu__btn-line{
@@ -29,4 +30,27 @@
     width: 34px;
     margin: 8px 0;
   }
+
+  .menu__mobile-linewrapper{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    background: #F0F0F4;
+    overflow-x: scroll;
+  }
+  .menu__mobile-line{
+    padding: 14px 0 14px 15px;
+    min-width: 450px;
+  }
 }
+
+
+@media (max-width: 640px) {
+  .header__adress{
+    display: none;
+  }
+}
+
+
